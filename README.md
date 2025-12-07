@@ -110,3 +110,58 @@ funky-functors-two-wonky-worlds/
 └── LICENSE
 ```
 
+In principle, each directory is meant to reflect some sort of conceptual component:
+definitions, demonstrations, visual explanations, formal tests.
+
+I'd say that this mirrors the structure of category theory itself:
+objects, morphisms, functors, proofs.
+
+***
+
+## What I hope you may be able to take away by Exploring the Code.....
+
+### C++ Functors
+
+This will be how the language uses functors for algorithm customization and why it does not directly have anything to do with category theory per se.......except maybe in spirit, surely enough....
+
+### Mathematical Functors
+
+This will be hopefully where categories are executable to a certain extent:
+objects mapping to objects, morphisms to morphisms, preservation of structures.
+
+### Contravariance
+
+So...function types reversed by predicates in C++? This seems very demanding yet interesting.....
+
+
+### Natural Transformations
+
+Naturality square rendered visually and reflected in the code itself.
+
+### Commutative Diagrams
+
+The functorial images of commutative squares remain commutative in both diagrams and logic (or at least this was my intention..)
+
+### Endofunctors in practice
+
+`std::vector` and `std::optional` become recognizable as the List and Maybe functors of functional programming, but expressed in C++
+
+
+*** 
+
+
+## Diagram Generator
+
+This is not crafted to illustrate the project in a sense, but rather to serve as a methodological principle of sorts:
+
+> If a concept is more abundant in category theory, I try to illustrate it in a diagram..
+
+> If a diagram illustrates structure, I try to generate it from the structure itself..
+
+
+So the C++ program writes DOT files, Graphviz renders them into PNGs, and the repo would serve to be a notebook of sorts consisting of category-theoretic visuals..
+
+
+***
+
+
