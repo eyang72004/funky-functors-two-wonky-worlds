@@ -1,0 +1,15 @@
+
+digraph IdentityLaw {
+    rankdir=LR;
+    node [shape=ellipse, fontsize=14];
+
+    id_X  [label="id_X: X -> X"];
+    Fid_X [label="F(id_X): F(X) -> F(X)"];
+    id_FX [label="id_{F(X)}: F(X) -> F(X)"];
+
+    id_X  -> Fid_X [label="F on morphisms"];
+    Fid_X -> id_FX [style=dashed, label="must equal"];
+
+    labelloc="t";
+    label="Identity law (both covariant and contravariant): F(id_X) = id_{F(X)}.";
+}

@@ -1,0 +1,28 @@
+
+digraph CovariantFunctor {
+    rankdir=LR;
+    node [shape=ellipse, fontsize=14];
+
+    subgraph cluster_C {
+        label="Category C";
+        style=rounded;
+        X [label="X"];
+        Y [label="Y"];
+        X -> Y [label="f"];
+    }
+
+    subgraph cluster_D {
+        label="Category D";
+        style=rounded;
+        FX [label="F(X)"];
+        FY [label="F(Y)"];
+        FX -> FY [label="F(f)"];
+    }
+
+    // object mapping
+    X  -> FX [style=dashed, label="F on objects"];
+    Y  -> FY [style=dashed, label="F on objects"];
+
+    labelloc="t";
+    label="Covariant functor F: C -> D preserves direction of morphisms.";
+}

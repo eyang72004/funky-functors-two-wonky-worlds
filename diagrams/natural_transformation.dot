@@ -1,0 +1,19 @@
+
+digraph NaturalTransformation {
+    rankdir=LR;
+    node [shape=ellipse, fontsize=14];
+
+    FX [label="F(X)"];
+    FY [label="F(Y)"];
+    GX [label="G(X)"];
+    GY [label="G(Y)"];
+
+    FX -> FY [label="F(f)"];
+    GX -> GY [label="G(f)"];
+
+    FX -> GX [style=dashed, label="eta_X"];
+    FY -> GY [style=dashed, label="eta_Y"];
+
+    labelloc="t";
+    label="Natural transformation eta: F => G (one naturality square).";
+}
