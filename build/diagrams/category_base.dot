@@ -1,0 +1,17 @@
+
+digraph Category {
+    rankdir=LR;
+    node [shape=ellipse, fontsize=14];
+
+    X [label="Object X"];
+    Y [label="Object Y"];
+    Z [label="Object Z"];
+
+    X -> Y [label="f"];
+    Y -> Z [label="g"];
+    // composition arrow
+    X -> Z [label="g_o_f"];
+
+    labelloc="t";
+    label="A small category: objects X, Y, Z and morphisms f, g, and g_o_f (composition).";
+}

@@ -1,0 +1,15 @@
+
+digraph CovariantComposition {
+    rankdir=LR;
+    node [shape=ellipse, fontsize=14];
+
+    g_of_f [label="g_o_f: X -> Z"];
+    Fg_of_f [label="F(g_o_f): F(X) -> F(Z)"];
+    FgFf   [label="F(g) o F(f): F(X) -> F(Z)"];
+
+    g_of_f   -> Fg_of_f [label="F on morphisms"];
+    Fg_of_f  -> FgFf    [style=dashed, label="must equal"];
+
+    labelloc="t";
+    label="Composition law (covariant): F(g_o_f) = F(g) o F(f).";
+}

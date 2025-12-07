@@ -1,0 +1,9 @@
+C:/Users/eyang/Downloads/funkyFunctorsAttempt/build/CMakeFiles/cpp_functors_demo.dir
+C:/Users/eyang/Downloads/funkyFunctorsAttempt/build/CMakeFiles/covariant_functors_demo.dir
+C:/Users/eyang/Downloads/funkyFunctorsAttempt/build/CMakeFiles/contravariant_functors_demo.dir
+C:/Users/eyang/Downloads/funkyFunctorsAttempt/build/CMakeFiles/subfunctors_demo.dir
+C:/Users/eyang/Downloads/funkyFunctorsAttempt/build/CMakeFiles/category_diagrams_demo.dir
+C:/Users/eyang/Downloads/funkyFunctorsAttempt/build/CMakeFiles/functor_laws_tests.dir
+C:/Users/eyang/Downloads/funkyFunctorsAttempt/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/eyang/Downloads/funkyFunctorsAttempt/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/eyang/Downloads/funkyFunctorsAttempt/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,10 @@
+^C:\USERS\EYANG\DOWNLOADS\FUNKYFUNCTORSATTEMPT\BUILD\CMAKEFILES\217A610E902423AF71A9E851D985E271\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eyang/Downloads/funkyFunctorsAttempt -BC:/Users/eyang/Downloads/funkyFunctorsAttempt/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/eyang/Downloads/funkyFunctorsAttempt/build/funky_functors_two_worlds.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
