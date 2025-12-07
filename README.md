@@ -165,3 +165,33 @@ So the C++ program writes DOT files, Graphviz renders them into PNGs, and the re
 ***
 
 
+## Testing the Functor Laws
+
+So I included a small testing suite that would attempt to verify functor axioms via more concrete examples....I hope.
+
+This means that:
+
+* `F(id_X)` really does equal `id_{F(X)}`
+* `F(g ∘ f)` really does equal `F(g) ∘ F(f)` (or the reversed form for contravariant functors)
+
+
+I tried to implement this so that the mathematical definitions would hopefully not be as abstract (and somewhat more accessible) to others....
+
+
+
+***
+
+
+## Acknowledgments and Inspiration
+
+This project is just a part of a reflection of a blend of personal programming practice and mathematical studies and exploration.
+
+
+Portions of the diagram generator and some category-diagram scaffolding were created with especially ChatGPT...an approach I have since embraced after working extensively as a project developer in the Wharton Generative AI Studio, where structured use of AI tools is encouraged in the service of clarity, visualization, and educational tooling.
+
+Every AI-generated component was reviewed, modified, and integrated manually, and all conceptual content was understood on a personal level to a certain extent prior to inclusion.
+
+In principle, I never intended to offload the thinking, but rather I wanted to expand the expressive toolkit used to explore the material.....
+
+
+Pull requests and other contributions are welcome.
