@@ -55,3 +55,58 @@ Probably sounds like a good starting point, I suppose..
 
 ### 2\. Structural: Mathematical Functors executed in C++
 
+Insted of letting objects be callable, I attempt to model functors here:
+
+* **Covariant Functors**: preserve arrow direction
+* **Contravariant Functors**: reverse them essentially
+* **Subfunctors**: restrict the domain
+* **Endofunctors**: these are like `std::vector<T>` acting on C++ types
+
+
+
+So the emphasis here is more on _structure_ rather than merely computation.
+I tried to make it so that every functor implementation would respect the formal laws of **identity** and **composition** preservation.
+
+I have not gone so far as to check these philosophically, as I enforced and tested them in the codebase itself.
+
+I think a little bit of a surprise was that C++ containers somewhat fit this mold..
+`std::vector<T>` seems to behave like the classical List functor, and `std::optional<T>` seems to mirror the Maybe functor from functional programming. 
+
+### 3\. Diagrams and Attempting to Visualize Category Theory Programmatically....at an Extremely Basic Level....
+
+
+Category theory is visual I suppose......we get arrows, commutative squares, and functor mappings that could lose their momentum when addressed in text only...
+
+So, here I try to include a program that would generate Graphviz diagrams from the C++ code itself.
+
+These diagrams include these:
+
+* Simple categories with explicit compositions
+* Covariant and Contravariant functor mappings
+* Identity and Composition Laws
+* Natural Transformations
+* Functors Preserving Commutative Squares
+* C++ containers shown as endofunctors
+
+I reckon that the advantage of generating diagrams programmatically is that I could potentially make the visuals become reproducible artifacts that are tied directly to the code itself.
+This follows from a key idea from my time being in the Generative AI Studio: **use automation and structured generation to illustrate reasoning** (not to replace it of course but...)..
+
+
+***
+
+## Project Layout
+
+```
+funky-functors-two-wonky-worlds/
+│
+├── include/        # Mathematical functors & abstractions
+├── src/            # Demos + diagram generator
+├── diagrams/       # All auto-generated diagrams (DOT + PNG)
+├── tests/          # Functor law checks
+│
+├── CMakeLists.txt
+├── README.md
+├── notes.md
+└── LICENSE
+```
+
