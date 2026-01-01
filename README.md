@@ -1,6 +1,6 @@
 # Funky Functors in Two Wonky Worlds
 
-_(A rather interesting bridge between C++ callable objets and the mathematical realm of functors....on a very basic level...)_
+_(A rather interesting bridge between C++ callable objects and the mathematical realm of functors....on a very basic level...)_
 
 
 When I first heard of the word "functor", the C++ version came to mind...where, as far as I am aware of, it is a reference to a class that overloads `operator()`.
